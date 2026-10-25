@@ -25,7 +25,6 @@
       margin: 0;
       padding: 0;
     }
-
     /* ===== LOGIN ===== */
     #loginScreen {
       position: fixed;
@@ -101,7 +100,6 @@
       margin-top: 12px;
       display: none;
     }
-
     /* ===== HERO ===== */
     .hero {
       position: relative;
@@ -135,7 +133,6 @@
       z-index: 5;
       cursor: pointer;
     }
-
     /* ===== BANNER SECCIÓN ===== */
     .seccion-banner {
       background: linear-gradient(90deg, #e8f4fc 0%, #d6eaf8 50%, #e8f4fc 100%);
@@ -148,7 +145,6 @@
       color: #1a1a2e;
       margin: 0;
     }
-
     /* ===== TARJETAS ===== */
     .seccion-contenido {
       padding: 40px 0 50px;
@@ -194,6 +190,9 @@
     .tarjeta-item .img-placeholder.biblioteca {
       background: linear-gradient(135deg, #1565c0, #1976d2, #42a5f5);
     }
+    .tarjeta-item .img-placeholder.rosa {
+      background: linear-gradient(135deg, #ad1457, #c2185b, #e91e63);
+    }
     .tarjeta-item .img-placeholder i {
       font-size: 4rem;
       margin-bottom: 10px;
@@ -216,7 +215,6 @@
       margin: 0;
       line-height: 1.3;
     }
-
     /* ===== PÁGINAS INTERNAS ===== */
     .pagina-interna {
       display: none;
@@ -226,7 +224,6 @@
     .pagina-interna.activa { display: block; }
     #contenidoPrincipal.oculto { display: none; }
     #appContent.oculto { display: none; }
-
     .barra-interna {
       position: sticky;
       top: 0;
@@ -261,9 +258,8 @@
       background: white;
       color: #1a1a2e;
     }
-
     /* Página clases vacía */
-    #paginaClases { background: #f5f0fa; }
+    #paginaClases, #paginaComprensionCristian, #paginaComprensionSergio { background: #f5f0fa; }
     .mensaje-vacio {
       max-width: 620px;
       margin: 80px auto 40px;
@@ -284,7 +280,6 @@
       margin-bottom: 12px;
     }
     .mensaje-vacio p { color: #666; font-size: 1.1rem; margin-bottom: 0; }
-
     /* Página intermedia Solucionarios */
     #paginaSolucionariosMenu, #paginaBiblioteca {
       background: #f8f4fc;
@@ -299,7 +294,6 @@
       margin-bottom: 8px;
     }
     .menu-titulo p { color: #666; }
-
     /* Páginas de detalle */
     #paginaBanco, #paginaConocimientos, #paginaExamenes {
       background: #1a5f7a;
@@ -315,7 +309,6 @@
       margin-bottom: 6px;
     }
     .solucionarios-titulo p { opacity: 0.85; font-size: 1.05rem; }
-
     .fila-solucionario { margin-bottom: 28px; }
     .video-card {
       background: #0e4d64;
@@ -416,7 +409,6 @@
       color: #0e3d4f;
       transform: translateY(-2px);
     }
-
     .btn-inicio {
       position: fixed;
       right: 24px;
@@ -481,13 +473,11 @@
     .btn-cerrar-sesion:hover {
       background: rgba(0,0,0,0.8);
     }
-
     footer {
       background: linear-gradient(135deg, #1a1a2e, #4a148c);
       color: white;
       padding: 40px 0;
     }
-
     @media (max-width: 767px) {
       .hero { min-height: 280px; }
       .info-derecha { padding: 20px 5px 10px; text-align: center; }
@@ -499,7 +489,6 @@
   </style>
 </head>
 <body>
-
   <!-- ===================== LOGIN ===================== -->
   <div id="loginScreen">
     <div class="login-box">
@@ -521,7 +510,6 @@
 
   <!-- ===================== APP (contenido protegido) ===================== -->
   <div id="appContent" class="oculto">
-
     <button class="btn-cerrar-sesion" onclick="cerrarSesion()">
       <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
     </button>
@@ -571,20 +559,33 @@
       <!-- COMPRENSION LECTORA -->
       <div class="seccion-banner">
         <div class="container">
-          <h2>COMPRENSION LECTORA</h2>
+          <h2>COMPRENSIÓN LECTORA</h2>
         </div>
       </div>
       <div class="seccion-contenido">
         <div class="container">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center g-4">
+            <!-- Cristian Alarcon -->
             <div class="col-md-5 col-lg-4">
-              <div class="tarjeta-item" onclick="abrirPaginaClases()" role="button" tabindex="0">
-                <div class="img-placeholder azul">
-                  <i class="bi bi-calculator"></i>
-                  <span>Comprension<br>Lectora</span>
+              <div class="tarjeta-item" onclick="abrirPaginaComprensionCristian()" role="button" tabindex="0">
+                <div class="img-placeholder rosa">
+                  <i class="bi bi-book"></i>
+                  <span>Comprensión<br>Lectora</span>
                 </div>
                 <div class="titulo-card">
-                  <h4>Lic. Cristian Alaarcon</h4>
+                  <h4>Lic. Cristian Alarcon</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Sergio Rodrigues -->
+            <div class="col-md-5 col-lg-4">
+              <div class="tarjeta-item" onclick="abrirPaginaComprensionSergio()" role="button" tabindex="0">
+                <div class="img-placeholder naranja">
+                  <i class="bi bi-journal-text"></i>
+                  <span>Comprensión<br>Lectora</span>
+                </div>
+                <div class="titulo-card">
+                  <h4>Lic. Sergio Rodrigues</h4>
                 </div>
               </div>
             </div>
@@ -628,11 +629,10 @@
           </div>
         </div>
       </div>
-
     </div>
     <!-- FIN CONTENIDO PRINCIPAL -->
 
-    <!-- PÁGINA CLASES -->
+    <!-- ===================== PÁGINA CLASES (Razonamiento Matemático) ===================== -->
     <div id="paginaClases" class="pagina-interna">
       <div class="barra-interna morada">
         <div class="container">
@@ -646,6 +646,44 @@
           <i class="bi bi-camera-video-off"></i>
           <h2>Por el momento no se tienen clases grabadas</h2>
           <p>Las clases de <strong>Razonamiento Matemático</strong> de octubre aún no han comenzado.<br>Pronto encontrarás aquí todos los videos de las sesiones grabadas.</p>
+        </div>
+      </div>
+      <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
+    </div>
+
+    <!-- ===================== PÁGINA COMPRENSIÓN LECTORA - CRISTIAN ALARCON ===================== -->
+    <div id="paginaComprensionCristian" class="pagina-interna">
+      <div class="barra-interna morada">
+        <div class="container">
+          <a href="#" class="btn-volver" onclick="cerrarTodas();return false;"><i class="bi bi-arrow-left"></i> Atrás</a>
+          <div class="fw-bold d-none d-md-block"><i class="bi bi-book me-2"></i> COMPRENSIÓN LECTORA</div>
+          <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mensaje-vacio">
+          <i class="bi bi-camera-video-off"></i>
+          <h2>Por el momento no se tienen clases grabadas</h2>
+          <p>Las clases de <strong>Comprensión Lectora</strong> del <strong>Lic. Cristian Alarcon</strong> aún no han comenzado.<br>Pronto encontrarás aquí todos los videos y documentos de clase.</p>
+        </div>
+      </div>
+      <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
+    </div>
+
+    <!-- ===================== PÁGINA COMPRENSIÓN LECTORA - SERGIO RODRIGUES ===================== -->
+    <div id="paginaComprensionSergio" class="pagina-interna">
+      <div class="barra-interna morada">
+        <div class="container">
+          <a href="#" class="btn-volver" onclick="cerrarTodas();return false;"><i class="bi bi-arrow-left"></i> Atrás</a>
+          <div class="fw-bold d-none d-md-block"><i class="bi bi-journal-text me-2"></i> COMPRENSIÓN LECTORA</div>
+          <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mensaje-vacio">
+          <i class="bi bi-camera-video-off"></i>
+          <h2>Por el momento no se tienen clases grabadas</h2>
+          <p>Las clases de <strong>Comprensión Lectora</strong> del <strong>Lic. Sergio Rodrigues</strong> aún no han comenzado.<br>Pronto encontrarás aquí todos los videos y documentos de clase.</p>
         </div>
       </div>
       <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
@@ -885,7 +923,6 @@
         <p>Selecciona el año del examen</p>
       </div>
       <div class="container pb-4">
-
         <!-- 2017 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -917,7 +954,6 @@
             </div>
           </div>
         </div>
-
         <!-- 2018 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -949,7 +985,6 @@
             </div>
           </div>
         </div>
-
         <!-- 2019 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -981,7 +1016,6 @@
             </div>
           </div>
         </div>
-
         <!-- 2020 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -1013,7 +1047,6 @@
             </div>
           </div>
         </div>
-
         <!-- 2021 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -1045,7 +1078,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
     </div>
@@ -1063,7 +1095,6 @@
         <p class="small opacity-50 mb-0">© 2025 - Todos los derechos reservados</p>
       </div>
     </footer>
-
   </div>
   <!-- FIN APP CONTENT -->
 
@@ -1110,14 +1141,14 @@
 
     function ocultarTodas() {
       document.getElementById("contenidoPrincipal").classList.add("oculto");
-      ["paginaClases","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
+      ["paginaClases","paginaComprensionCristian","paginaComprensionSergio","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
         document.getElementById(id).classList.remove("activa");
       });
       document.getElementById("btnWhatsapp").style.display = "none";
     }
 
     function cerrarTodas() {
-      ["paginaClases","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
+      ["paginaClases","paginaComprensionCristian","paginaComprensionSergio","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
         document.getElementById(id).classList.remove("activa");
       });
       document.getElementById("contenidoPrincipal").classList.remove("oculto");
@@ -1137,30 +1168,49 @@
       window.scrollTo(0,0);
       history.pushState({p:"clases"}, "", "#clases");
     }
+
+    function abrirPaginaComprensionCristian() {
+      ocultarTodas();
+      document.getElementById("paginaComprensionCristian").classList.add("activa");
+      window.scrollTo(0,0);
+      history.pushState({p:"comprension-cristian"}, "", "#comprension-cristian");
+    }
+
+    function abrirPaginaComprensionSergio() {
+      ocultarTodas();
+      document.getElementById("paginaComprensionSergio").classList.add("activa");
+      window.scrollTo(0,0);
+      history.pushState({p:"comprension-sergio"}, "", "#comprension-sergio");
+    }
+
     function abrirPaginaSolucionariosMenu() {
       ocultarTodas();
       document.getElementById("paginaSolucionariosMenu").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"solucionarios"}, "", "#solucionarios");
     }
+
     function abrirPaginaBanco() {
       ocultarTodas();
       document.getElementById("paginaBanco").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"banco"}, "", "#banco");
     }
+
     function abrirPaginaConocimientos() {
       ocultarTodas();
       document.getElementById("paginaConocimientos").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"conocimientos"}, "", "#conocimientos");
     }
+
     function abrirPaginaBiblioteca() {
       ocultarTodas();
       document.getElementById("paginaBiblioteca").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"biblioteca"}, "", "#biblioteca");
     }
+
     function abrirPaginaExamenes() {
       ocultarTodas();
       document.getElementById("paginaExamenes").classList.add("activa");
