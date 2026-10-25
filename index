@@ -43,7 +43,7 @@
       padding: 40px 35px;
       width: 100%;
       max-width: 400px;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35); 
       text-align: center;
     }
     .login-box .logo-icon {
