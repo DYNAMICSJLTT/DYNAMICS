@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -25,6 +25,7 @@
       margin: 0;
       padding: 0;
     }
+
     /* ===== LOGIN ===== */
     #loginScreen {
       position: fixed;
@@ -43,7 +44,7 @@
       padding: 40px 35px;
       width: 100%;
       max-width: 400px;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.35); 
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
       text-align: center;
     }
     .login-box .logo-icon {
@@ -100,6 +101,7 @@
       margin-top: 12px;
       display: none;
     }
+
     /* ===== HERO ===== */
     .hero {
       position: relative;
@@ -133,6 +135,7 @@
       z-index: 5;
       cursor: pointer;
     }
+
     /* ===== BANNER SECCIÓN ===== */
     .seccion-banner {
       background: linear-gradient(90deg, #e8f4fc 0%, #d6eaf8 50%, #e8f4fc 100%);
@@ -145,6 +148,7 @@
       color: #1a1a2e;
       margin: 0;
     }
+
     /* ===== TARJETAS ===== */
     .seccion-contenido {
       padding: 40px 0 50px;
@@ -184,14 +188,8 @@
     .tarjeta-item .img-placeholder.verde {
       background: linear-gradient(135deg, #1b5e20, #2e7d32, #43a047);
     }
-    .tarjeta-item .img-placeholder.naranja {
-      background: linear-gradient(135deg, #e65100, #f57c00, #ff9800);
-    }
     .tarjeta-item .img-placeholder.biblioteca {
       background: linear-gradient(135deg, #1565c0, #1976d2, #42a5f5);
-    }
-    .tarjeta-item .img-placeholder.rosa {
-      background: linear-gradient(135deg, #ad1457, #c2185b, #e91e63);
     }
     .tarjeta-item .img-placeholder i {
       font-size: 4rem;
@@ -215,6 +213,7 @@
       margin: 0;
       line-height: 1.3;
     }
+
     /* ===== PÁGINAS INTERNAS ===== */
     .pagina-interna {
       display: none;
@@ -224,6 +223,7 @@
     .pagina-interna.activa { display: block; }
     #contenidoPrincipal.oculto { display: none; }
     #appContent.oculto { display: none; }
+
     .barra-interna {
       position: sticky;
       top: 0;
@@ -258,29 +258,7 @@
       background: white;
       color: #1a1a2e;
     }
-    /* Página clases vacía */
-    #paginaClases, #paginaComprensionCristian, #paginaComprensionSergio { background: #f5f0fa; }
-    .mensaje-vacio {
-      max-width: 620px;
-      margin: 80px auto 40px;
-      text-align: center;
-      background: white;
-      border-radius: 24px;
-      padding: 50px 30px;
-      box-shadow: 0 15px 45px rgba(74,20,140,0.12);
-    }
-    .mensaje-vacio i {
-      font-size: 4.5rem;
-      color: var(--morado);
-      margin-bottom: 20px;
-    }
-    .mensaje-vacio h2 {
-      font-weight: 800;
-      color: var(--morado-oscuro);
-      margin-bottom: 12px;
-    }
-    .mensaje-vacio p { color: #666; font-size: 1.1rem; margin-bottom: 0; }
-    /* Página intermedia Solucionarios */
+
     #paginaSolucionariosMenu, #paginaBiblioteca {
       background: #f8f4fc;
     }
@@ -294,8 +272,8 @@
       margin-bottom: 8px;
     }
     .menu-titulo p { color: #666; }
-    /* Páginas de detalle */
-    #paginaBanco, #paginaConocimientos, #paginaExamenes {
+
+    #paginaClases, #paginaBanco, #paginaConocimientos, #paginaExamenes {
       background: #1a5f7a;
     }
     .solucionarios-titulo {
@@ -309,6 +287,7 @@
       margin-bottom: 6px;
     }
     .solucionarios-titulo p { opacity: 0.85; font-size: 1.05rem; }
+
     .fila-solucionario { margin-bottom: 28px; }
     .video-card {
       background: #0e4d64;
@@ -337,6 +316,8 @@
     .video-card .cuerpo-video {
       height: 200px;
       background: #e8f0f5;
+      background-image: linear-gradient(#c5d5e0 1px, transparent 1px), linear-gradient(90deg, #c5d5e0 1px, transparent 1px);
+      background-size: 25px 25px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -385,7 +366,7 @@
     }
     .info-derecha h3 {
       font-weight: 700;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       margin-bottom: 18px;
       letter-spacing: 0.5px;
     }
@@ -409,6 +390,7 @@
       color: #0e3d4f;
       transform: translateY(-2px);
     }
+
     .btn-inicio {
       position: fixed;
       right: 24px;
@@ -473,15 +455,17 @@
     .btn-cerrar-sesion:hover {
       background: rgba(0,0,0,0.8);
     }
+
     footer {
       background: linear-gradient(135deg, #1a1a2e, #4a148c);
       color: white;
       padding: 40px 0;
     }
+
     @media (max-width: 767px) {
       .hero { min-height: 280px; }
       .info-derecha { padding: 20px 5px 10px; text-align: center; }
-      .info-derecha h3 { font-size: 1.4rem; }
+      .info-derecha h3 { font-size: 1.3rem; }
       .btn-pdf { max-width: 100%; }
       .video-card { margin-bottom: 12px; }
       .seccion-banner h2 { font-size: 1.5rem; }
@@ -489,54 +473,38 @@
   </style>
 </head>
 <body>
-  <!-- ===================== LOGIN ===================== -->
+
+  <!-- LOGIN -->
   <div id="loginScreen">
     <div class="login-box">
-      <div class="logo-icon">
-        <i class="bi bi-mortarboard-fill"></i>
-      </div>
+      <div class="logo-icon"><i class="bi bi-mortarboard-fill"></i></div>
       <h2>DYNAMICS</h2>
       <p>Ingresa tus datos para acceder al contenido</p>
       <form id="loginForm" onsubmit="return intentarLogin(event)">
         <input type="text" id="usuario" class="form-control" placeholder="Usuario" required autocomplete="username">
         <input type="password" id="clave" class="form-control" placeholder="Contraseña" required autocomplete="current-password">
-        <button type="submit" class="btn-login">
-          <i class="bi bi-box-arrow-in-right me-2"></i> Ingresar
-        </button>
+        <button type="submit" class="btn-login"><i class="bi bi-box-arrow-in-right me-2"></i> Ingresar</button>
         <div class="login-error" id="loginError">Usuario o contraseña incorrectos</div>
       </form>
     </div>
   </div>
 
-  <!-- ===================== APP (contenido protegido) ===================== -->
+  <!-- APP -->
   <div id="appContent" class="oculto">
-    <button class="btn-cerrar-sesion" onclick="cerrarSesion()">
-      <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
-    </button>
+    <button class="btn-cerrar-sesion" onclick="cerrarSesion()"><i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión</button>
 
     <!-- HERO -->
     <section class="hero" id="heroBanner">
       <div class="hero-overlay"></div>
-      <a href="https://wa.me/59175828534" class="hero-click-whatsapp" target="_blank" title="Contáctanos por WhatsApp"></a>
-      <div class="container hero-content">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <span class="badge-instituto">Instituto DYNAMICS</span>
-            <h1>Clases de <span>Razonamiento Matemático</span></h1>
-            <p class="subtitulo">Material de apoyo • Solucionarios • Videos de clases</p>
-          </div>
-        </div>
-      </div>
+      <a href="https://wa.me/59175828534" class="hero-click-whatsapp" target="_blank"></a>
+      <div class="container hero-content"></div>
     </section>
 
     <!-- CONTENIDO PRINCIPAL -->
     <div id="contenidoPrincipal">
-
       <!-- VIDEOS OCTUBRE -->
       <div class="seccion-banner">
-        <div class="container">
-          <h2>Videos de Grabaciones de Clase OCTUBRE</h2>
-        </div>
+        <div class="container"><h2>Videos de Grabaciones de Clase OCTUBRE</h2></div>
       </div>
       <div class="seccion-contenido">
         <div class="container">
@@ -547,46 +515,7 @@
                   <i class="bi bi-calculator"></i>
                   <span>Razonamiento<br>Matemático</span>
                 </div>
-                <div class="titulo-card">
-                  <h4>Razonamiento<br>Matemático</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- COMPRENSION LECTORA -->
-      <div class="seccion-banner">
-        <div class="container">
-          <h2>COMPRENSIÓN LECTORA</h2>
-        </div>
-      </div>
-      <div class="seccion-contenido">
-        <div class="container">
-          <div class="row justify-content-center g-4">
-            <!-- Cristian Alarcon -->
-            <div class="col-md-5 col-lg-4">
-              <div class="tarjeta-item" onclick="abrirPaginaComprensionCristian()" role="button" tabindex="0">
-                <div class="img-placeholder rosa">
-                  <i class="bi bi-book"></i>
-                  <span>Comprensión<br>Lectora</span>
-                </div>
-                <div class="titulo-card">
-                  <h4>Lic. Cristian Alarcon</h4>
-                </div>
-              </div>
-            </div>
-            <!-- Sergio Rodrigues -->
-            <div class="col-md-5 col-lg-4">
-              <div class="tarjeta-item" onclick="abrirPaginaComprensionSergio()" role="button" tabindex="0">
-                <div class="img-placeholder naranja">
-                  <i class="bi bi-journal-text"></i>
-                  <span>Comprensión<br>Lectora</span>
-                </div>
-                <div class="titulo-card">
-                  <h4>Lic. Sergio Rodrigues</h4>
-                </div>
+                <div class="titulo-card"><h4>Razonamiento<br>Matemático</h4></div>
               </div>
             </div>
           </div>
@@ -595,98 +524,436 @@
 
       <!-- MATERIAL ADICIONAL -->
       <div class="seccion-banner">
-        <div class="container">
-          <h2>Material Adicional</h2>
-        </div>
+        <div class="container"><h2>Material Adicional</h2></div>
       </div>
-      <div class="seccion-contenido" style="padding-top: 30px;">
+      <div class="seccion-contenido" style="padding-top:30px;">
         <div class="container">
           <div class="row justify-content-center g-4">
-            <!-- Solucionarios -->
             <div class="col-md-5 col-lg-4">
-              <div class="tarjeta-item" onclick="abrirPaginaSolucionariosMenu()" role="button" tabindex="0">
-                <div class="img-placeholder">
-                  <i class="bi bi-journals"></i>
-                  <span>Solucionarios</span>
-                </div>
-                <div class="titulo-card">
-                  <h4>Solucionarios del<br>Banco de Preguntas</h4>
-                </div>
+              <div class="tarjeta-item" onclick="abrirPaginaSolucionariosMenu()" role="button">
+                <div class="img-placeholder"><i class="bi bi-journals"></i><span>Solucionario</span></div>
+                <div class="titulo-card"><h4>Solucionario del<br>Banco de Preguntas</h4></div>
               </div>
             </div>
-            <!-- Biblioteca -->
             <div class="col-md-5 col-lg-4">
-              <div class="tarjeta-item" onclick="abrirPaginaBiblioteca()" role="button" tabindex="0">
-                <div class="img-placeholder biblioteca">
-                  <i class="bi bi-bookshelf"></i>
-                  <span>Biblioteca</span>
-                </div>
-                <div class="titulo-card">
-                  <h4>Biblioteca<br>Exámenes ESFM</h4>
-                </div>
+              <div class="tarjeta-item" onclick="abrirPaginaBiblioteca()" role="button">
+                <div class="img-placeholder biblioteca"><i class="bi bi-bookshelf"></i><span>Biblioteca</span></div>
+                <div class="titulo-card"><h4>Biblioteca<br>Exámenes ESFM</h4></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- FIN CONTENIDO PRINCIPAL -->
 
-    <!-- ===================== PÁGINA CLASES (Razonamiento Matemático) ===================== -->
+    <!-- ========== PÁGINA CLASES (AHORA CON CONTENIDO) ========== -->
     <div id="paginaClases" class="pagina-interna">
-      <div class="barra-interna morada">
+      <div class="barra-interna azul">
         <div class="container">
           <a href="#" class="btn-volver" onclick="cerrarTodas();return false;"><i class="bi bi-arrow-left"></i> Atrás</a>
           <div class="fw-bold d-none d-md-block"><i class="bi bi-camera-video me-2"></i> CLASES GRABADAS - OCTUBRE</div>
           <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
         </div>
       </div>
-      <div class="container">
-        <div class="mensaje-vacio">
-          <i class="bi bi-camera-video-off"></i>
-          <h2>Por el momento no se tienen clases grabadas</h2>
-          <p>Las clases de <strong>Razonamiento Matemático</strong> de octubre aún no han comenzado.<br>Pronto encontrarás aquí todos los videos de las sesiones grabadas.</p>
-        </div>
+      <div class="solucionarios-titulo">
+        <h1>Razonamiento Matemático</h1>
+        <p>Clases grabadas - Octubre</p>
       </div>
-      <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
-    </div>
+      <div class="container pb-4">
 
-    <!-- ===================== PÁGINA COMPRENSIÓN LECTORA - CRISTIAN ALARCON ===================== -->
-    <div id="paginaComprensionCristian" class="pagina-interna">
-      <div class="barra-interna morada">
-        <div class="container">
-          <a href="#" class="btn-volver" onclick="cerrarTodas();return false;"><i class="bi bi-arrow-left"></i> Atrás</a>
-          <div class="fw-bold d-none d-md-block"><i class="bi bi-book me-2"></i> COMPRENSIÓN LECTORA</div>
-          <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
+        <!-- CLASE 1 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 1: <span>ORDENAMIENTO LINEAL - PARTE 1</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1o3s8irRjPFK_b7oRf3hbuwbEiLWs4IT3/view?usp=drivesdk" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 1 - Ordenamiento Lineal Parte 1</h3>
+                <a href="https://drive.google.com/file/d/1AGJe6aVBovQt4GBlZxChBqc8irSWZuTp/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/15PYvVRLGz7IXesBqWU-UAa18hU6WlCgn/view?usp=drivesdk" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="mensaje-vacio">
-          <i class="bi bi-camera-video-off"></i>
-          <h2>Por el momento no se tienen clases grabadas</h2>
-          <p>Las clases de <strong>Comprensión Lectora</strong> del <strong>Lic. Cristian Alarcon</strong> aún no han comenzado.<br>Pronto encontrarás aquí todos los videos y documentos de clase.</p>
-        </div>
-      </div>
-      <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
-    </div>
 
-    <!-- ===================== PÁGINA COMPRENSIÓN LECTORA - SERGIO RODRIGUES ===================== -->
-    <div id="paginaComprensionSergio" class="pagina-interna">
-      <div class="barra-interna morada">
-        <div class="container">
-          <a href="#" class="btn-volver" onclick="cerrarTodas();return false;"><i class="bi bi-arrow-left"></i> Atrás</a>
-          <div class="fw-bold d-none d-md-block"><i class="bi bi-journal-text me-2"></i> COMPRENSIÓN LECTORA</div>
-          <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
+        <!-- CLASE 2 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 2: <span>ORDENAMIENTO LINEAL - PARTE 2</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1FVBc_3v0EJ6UqS8o-bRzMTUh1FcnB7oH/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 2 - Ordenamiento Lineal Parte 2</h3>
+                <a href="https://drive.google.com/file/d/1AGJe6aVBovQt4GBlZxChBqc8irSWZuTp/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1LpXC0gZHTBhgB2wX2dq6iZW408XLM9Qt/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="mensaje-vacio">
-          <i class="bi bi-camera-video-off"></i>
-          <h2>Por el momento no se tienen clases grabadas</h2>
-          <p>Las clases de <strong>Comprensión Lectora</strong> del <strong>Lic. Sergio Rodrigues</strong> aún no han comenzado.<br>Pronto encontrarás aquí todos los videos y documentos de clase.</p>
+       <!-- CLASE 3 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 3: <span>ORDENAMIENTO CIRCULAR - PARTE 1</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1D73dOWwo5FNJpFT8qQBWqrr1WSJcvBTq/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 1 - Ordenamiento Circular Parte 1</h3>
+                <a href="https://drive.google.com/file/d/15hA-RXxCmTkx4Id9IFa8_RdKVDMtoep3/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1UVAg0MqTURmy9_F_eyZYb53bOVR4Ev18/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
+       <!-- CLASE 4 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 4: <span>ORDENAMIENTO CIRCULAR - PARTE 2</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1AygD5CZ8Qnhr3mhu_6lmOe0Q2HoQXyOW/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 2 - Ordenamiento Circular Parte 2</h3>
+                <a href="https://drive.google.com/file/d/15hA-RXxCmTkx4Id9IFa8_RdKVDMtoep3/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/12is53wayl78V_i5Ee7tUxMJ7sbLnXIkl/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 5 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 5: <span>ORDENAMIENTO CIRCULAR - PARTE 3</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1uIsQS3jkowi5y0jsc5J6zc1wEjahY9jm/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 3 - Ordenamiento Circular Parte 3</h3>
+                <a href="https://drive.google.com/file/d/15hA-RXxCmTkx4Id9IFa8_RdKVDMtoep3/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1ZVEX7Q1i5Ti7VPSkXn-zszZz7E64wo4i/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 5 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 5: <span>ORDENAMIENTO DE DOBLE Y TRIPLE ENTRADA - PARTE 1</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1xjQ6aOObJfsV0VAHTCMfI2goyH3PeIZM/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 1 - Ordenamiento de Doble y Triple Entrada Parte 1</h3>
+                <a href="https://drive.google.com/file/d/1Z_URmKAHjU2IAyNk-29EaVgo66MhCebp/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1ViOW5k3vGgMeAG_37G2giQ5RBs-CCeU3/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 6 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 6: <span>ORDENAMIENTO DE DOBLE Y TRIPLE ENTRADA - PARTE 2</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1C10m_vbQf6YMeF-lPd3Y2C2-ByEANaQ3/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 2 - Ordenamiento de Doble y Triple Entrada Parte 2</h3>
+                <a href="https://drive.google.com/file/d/1Z_URmKAHjU2IAyNk-29EaVgo66MhCebp/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/12WF-J83QNbu_6nqXMvT8gdUQ-VGlpDZA/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 7 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 7: <span>ORDENAMIENTO DE DOBLE Y TRIPLE ENTRADA - PARTE 3</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1Q8VUEl8w80-Wsj2cFKdlXWtSUvUzf1fx/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 3 - Ordenamiento de Doble y Triple Entrada Parte 3</h3>
+                <a href="https://drive.google.com/file/d/1Z_URmKAHjU2IAyNk-29EaVgo66MhCebp/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/11a3Jf36XJNcmu1YQeRtZO79yMq8sT-O6/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 7 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 7: <span>REGLA CONJUNTA - PARTE 1</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1yc0RMPAr7HBirUf5eDgbFadJtTIxvT-s/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 1 - Regla Conjunta Parte 1</h3>
+                <a href="https://drive.google.com/file/d/1JriE5pco5tjnUFudvavMw-XH42vNwkBj/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1w7Ql4tBEjmIC4doQopDlCyirNS31wIYk/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 8 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 8: <span>REGLA CONJUNTA - PARTE 2</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1nr67s-x8yLO5KE7LWiZ8C_wwQy3xwlG2/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 2 - Regla Conjunta Parte 2</h3>
+                <a href="https://drive.google.com/file/d/1JriE5pco5tjnUFudvavMw-XH42vNwkBj/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1l35vzck2b9y8t2t6GGtBkoQQNz5jdNFX/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 9 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 9: <span>REGLA DEL RECTANGULO - PARTE 1</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1BnCOsL8o73Qp4q75EDY0LmAauuTX2QEY/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 1 - Regla del Rectangulo Parte 1</h3>
+                <a href="https://drive.google.com/file/d/1hCWMhdLjFG0IJVSdC0AVKBzRt9rQeVqC/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1kBsnK8UHFiD3vrRhJCGcHmCjkMNpB5y0/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- CLASE 10 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 10: <span>REGLA DEL RECTANGULO - PARTE 2</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1MkLFQODPBw-eZJ0jtnV0xzhRBwM0tg7p/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 2 - Regla del Rectangulo Parte 2</h3>
+                <a href="https://drive.google.com/file/d/1hCWMhdLjFG0IJVSdC0AVKBzRt9rQeVqC/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/16F2iKdITWx-SlA_Esn6PKPkKBrsye7GR/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLASE 10 -->
+        <div class="fila-solucionario">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="video-card">
+                <div class="header-video">
+                  <div class="titulo-video">CLASE 10: <span>REGLA DEL CANGREJO - PARTE 1</span></div>
+                  <div class="icons"><i class="bi bi-fullscreen"></i></div>
+                </div>
+                <div class="cuerpo-video">
+                  <a href="https://drive.google.com/file/d/1O9vXkbflhUu_tppo8U1JP1zqYDN9ytqi/view?usp=drive_link" class="play-btn" target="_blank" title="Ver Video">
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-derecha">
+                <h3>Clase 1 - Regla del Cangrejo Parte 1</h3>
+                <a href="https://drive.google.com/file/d/1n7sfqS_NfVCLkpMrLUstiMi7GvLmmqfi/view?usp=drive_link" class="btn-pdf mb-2" target="_blank">
+                  Documento de avance
+                </a>
+                <a href="https://drive.google.com/file/d/1ifybwZwgAFAMUOK1WjPEW_9bMNvCItUg/view?usp=drive_link" class="btn-pdf" target="_blank">
+                  Apuntes de clases
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
-      <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
+      <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
     </div>
 
     <!-- MENÚ SOLUCIONARIOS -->
@@ -706,19 +973,13 @@
         <div class="row justify-content-center g-4">
           <div class="col-md-5 col-lg-4">
             <div class="tarjeta-item" onclick="abrirPaginaBanco()" role="button">
-              <div class="img-placeholder">
-                <i class="bi bi-journal-bookmark-fill"></i>
-                <span>Banco de Preguntas</span>
-              </div>
-              <div class="titulo-card"><h4>Razonamiento<br>Matematico</h4></div>
+              <div class="img-placeholder"><i class="bi bi-journal-bookmark-fill"></i><span>Banco de Preguntas</span></div>
+              <div class="titulo-card"><h4>Solucionario del<br>Banco de Preguntas</h4></div>
             </div>
           </div>
           <div class="col-md-5 col-lg-4">
             <div class="tarjeta-item" onclick="abrirPaginaConocimientos()" role="button">
-              <div class="img-placeholder verde">
-                <i class="bi bi-book-half"></i>
-                <span>Conocimientos<br>Generales</span>
-              </div>
+              <div class="img-placeholder verde"><i class="bi bi-book-half"></i><span>Conocimientos<br>Generales</span></div>
               <div class="titulo-card"><h4>Conocimientos<br>Generales</h4></div>
             </div>
           </div>
@@ -727,7 +988,7 @@
       <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
     </div>
 
-    <!-- BANCO DE PREGUNTAS -->
+    <!-- BANCO DE PREGUNTAS (se mantiene igual) -->
     <div id="paginaBanco" class="pagina-interna">
       <div class="barra-interna azul">
         <div class="container">
@@ -741,83 +1002,35 @@
         <p>Selecciona el rango de preguntas</p>
       </div>
       <div class="container pb-4">
-        <!-- 1-98 -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>1 - 98</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1euvUqeEMlcQTDeEeiNeBK29VSyChwECY/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>PREGUNTAS - 1 a 98</h3>
-            <a href="https://drive.google.com/file/d/1-ANvKojWqnAyhzd80ZsulXVen_Z9JOpi/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 1 - 98</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>1 - 98</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1euvUqeEMlcQTDeEeiNeBK29VSyChwECY/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>PREGUNTAS - 1 a 98</h3><a href="https://drive.google.com/file/d/1-ANvKojWqnAyhzd80ZsulXVen_Z9JOpi/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 1 - 98</a></div></div>
         </div></div>
-        <!-- 98-198 -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>98 - 198</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1MP0NgHLKJ2_hUcTCLB1Uu07UdMVQWMly/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>PREGUNTAS - 98 a 198</h3>
-            <a href="https://drive.google.com/file/d/1WciD7RucIG1o88zaP-qgE5C85Td3p26Z/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 98 - 198</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>98 - 198</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1MP0NgHLKJ2_hUcTCLB1Uu07UdMVQWMly/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>PREGUNTAS - 98 a 198</h3><a href="https://drive.google.com/file/d/1WciD7RucIG1o88zaP-qgE5C85Td3p26Z/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 98 - 198</a></div></div>
         </div></div>
-        <!-- 99-230 -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>99 - 230</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1h7EbrK4dSQgVHWeWqmH1hQ0kPrnz0yO1/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>PREGUNTAS - 99 a 230</h3>
-            <a href="https://drive.google.com/file/d/1KIDScCNHpbK2kWCLCFQ5ay-qDa7WcNVF/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 99 - 230</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>99 - 230</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1h7EbrK4dSQgVHWeWqmH1hQ0kPrnz0yO1/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>PREGUNTAS - 99 a 230</h3><a href="https://drive.google.com/file/d/1KIDScCNHpbK2kWCLCFQ5ay-qDa7WcNVF/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 99 - 230</a></div></div>
         </div></div>
-        <!-- 230-250 -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>230 - 250</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/19vKEFb1do93PJmDd7TjnhULNDr6hB1ew/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>PREGUNTAS - 230 a 250</h3>
-            <a href="https://drive.google.com/file/d/1EZUSGHWKU_9rJCisWfOFQScAwkCAKKN0/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 230 - 250</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>230 - 250</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/19vKEFb1do93PJmDd7TjnhULNDr6hB1ew/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>PREGUNTAS - 230 a 250</h3><a href="https://drive.google.com/file/d/1EZUSGHWKU_9rJCisWfOFQScAwkCAKKN0/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 230 - 250</a></div></div>
         </div></div>
-        <!-- 250-265 -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>250 - 265</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1wZhEmivaPQopTkxjx35XBDWOnkuaFVzb/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>PREGUNTAS - 250 a 265</h3>
-            <a href="https://drive.google.com/file/d/19Nt_MRANLCvmC28AP_l8mvPGIgsKFMTN/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 250 - 265</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>250 - 265</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1wZhEmivaPQopTkxjx35XBDWOnkuaFVzb/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>PREGUNTAS - 250 a 265</h3><a href="https://drive.google.com/file/d/19Nt_MRANLCvmC28AP_l8mvPGIgsKFMTN/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 250 - 265</a></div></div>
         </div></div>
-        <!-- 266-300 -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>266 - 300</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1BFdbCkz7ubLp6yDchncGYpN9mxn6ykrM/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>PREGUNTAS - 266 a 300</h3>
-            <a href="https://drive.google.com/file/d/143xK-PCmZFOdvxkLApYx4kfGvx1SXm-7/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 266 - 300</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">Z. MATEMÁTICO: <span>266 - 300</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1BFdbCkz7ubLp6yDchncGYpN9mxn6ykrM/view?usp=drive_link" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>PREGUNTAS - 266 a 300</h3><a href="https://drive.google.com/file/d/143xK-PCmZFOdvxkLApYx4kfGvx1SXm-7/view?usp=drive_link" class="btn-pdf" target="_blank">Apuntes PDF - Solución 266 - 300</a></div></div>
         </div></div>
       </div>
       <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
@@ -832,55 +1045,28 @@
           <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
         </div>
       </div>
-      <div class="solucionarios-titulo">
-        <h1>Conocimientos Generales</h1>
-        <p>Selecciona la materia</p>
-      </div>
+      <div class="solucionarios-titulo"><h1>Conocimientos Generales</h1><p>Selecciona la materia</p></div>
       <div class="container pb-4">
-        <!-- Física -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">CONOCIMIENTOS: <span>FÍSICA</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1Ia1Xtt9wLArs75ochgMr9Vs6up7wmfJb/view?usp=drivesdk" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>FÍSICA</h3>
-            <a href="https://drive.google.com/file/d/1UhKKQlwgh8uAapFpY3b1WKAVa8wHhfT8/view?usp=drivesdk" class="btn-pdf" target="_blank">Apuntes PDF - Física</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">CONOCIMIENTOS: <span>FÍSICA</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1Ia1Xtt9wLArs75ochgMr9Vs6up7wmfJb/view?usp=drivesdk" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>FÍSICA</h3><a href="https://drive.google.com/file/d/1UhKKQlwgh8uAapFpY3b1WKAVa8wHhfT8/view?usp=drivesdk" class="btn-pdf" target="_blank">Apuntes PDF - Física</a></div></div>
         </div></div>
-        <!-- Química -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">CONOCIMIENTOS: <span>QUÍMICA</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1J-ewvs_nqQ5qN4b3vYBQgxPYIjvMerTh/view?usp=drivesdk" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>QUÍMICA</h3>
-            <a href="https://drive.google.com/file/d/1uKj439DF3Bj22HwQnTI-I7e2FFXAkcAR/view?usp=drivesdk" class="btn-pdf" target="_blank">Apuntes PDF - Química</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">CONOCIMIENTOS: <span>QUÍMICA</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1J-ewvs_nqQ5qN4b3vYBQgxPYIjvMerTh/view?usp=drivesdk" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>QUÍMICA</h3><a href="https://drive.google.com/file/d/1uKj439DF3Bj22HwQnTI-I7e2FFXAkcAR/view?usp=drivesdk" class="btn-pdf" target="_blank">Apuntes PDF - Química</a></div></div>
         </div></div>
-        <!-- Matemáticas -->
         <div class="fila-solucionario"><div class="row align-items-center g-3">
-          <div class="col-md-6"><div class="video-card">
-            <div class="header-video"><div class="titulo-video">CONOCIMIENTOS: <span>MATEMÁTICAS</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
-            <div class="cuerpo-video" style="background-image:linear-gradient(#c5d5e0 1px,transparent 1px),linear-gradient(90deg,#c5d5e0 1px,transparent 1px);background-size:25px 25px;">
-              <a href="https://drive.google.com/file/d/1efCtiO7ZpFFCyd9ds1y5_U7EGft9cbUp/view?usp=drivesdk" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a>
-            </div>
-          </div></div>
-          <div class="col-md-6"><div class="info-derecha">
-            <h3>MATEMÁTICAS</h3>
-            <a href="https://drive.google.com/file/d/1cdCAjSMhmmSeGJsc1Q6TKrZUvhfxsv4q/view?usp=drivesdk" class="btn-pdf" target="_blank">Apuntes PDF - Matemáticas</a>
-          </div></div>
+          <div class="col-md-6"><div class="video-card"><div class="header-video"><div class="titulo-video">CONOCIMIENTOS: <span>MATEMÁTICAS</span></div><div class="icons"><i class="bi bi-fullscreen"></i></div></div>
+            <div class="cuerpo-video"><a href="https://drive.google.com/file/d/1efCtiO7ZpFFCyd9ds1y5_U7EGft9cbUp/view?usp=drivesdk" class="play-btn" target="_blank"><i class="bi bi-play-fill"></i></a></div></div></div>
+          <div class="col-md-6"><div class="info-derecha"><h3>MATEMÁTICAS</h3><a href="https://drive.google.com/file/d/1cdCAjSMhmmSeGJsc1Q6TKrZUvhfxsv4q/view?usp=drivesdk" class="btn-pdf" target="_blank">Apuntes PDF - Matemáticas</a></div></div>
         </div></div>
       </div>
       <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
     </div>
 
-    <!-- ===================== BIBLIOTECA / EXÁMENES ===================== -->
+    <!-- BIBLIOTECA -->
     <div id="paginaBiblioteca" class="pagina-interna">
       <div class="barra-interna morada">
         <div class="container">
@@ -889,18 +1075,12 @@
           <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
         </div>
       </div>
-      <div class="menu-titulo">
-        <h1>Biblioteca ESFM</h1>
-        <p>Exámenes de años anteriores</p>
-      </div>
+      <div class="menu-titulo"><h1>Biblioteca ESFM</h1><p>Exámenes de años anteriores</p></div>
       <div class="container pb-5">
         <div class="row justify-content-center">
           <div class="col-md-5 col-lg-4">
             <div class="tarjeta-item" onclick="abrirPaginaExamenes()" role="button">
-              <div class="img-placeholder biblioteca">
-                <i class="bi bi-file-earmark-text"></i>
-                <span>Exámenes ESFM<br>2017 - 2021</span>
-              </div>
+              <div class="img-placeholder biblioteca"><i class="bi bi-file-earmark-text"></i><span>Exámenes ESFM<br>2017 - 2021</span></div>
               <div class="titulo-card"><h4>Exámenes ESFM</h4></div>
             </div>
           </div>
@@ -909,7 +1089,7 @@
       <a href="#" class="btn-inicio" style="background:#4a148c;" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
     </div>
 
-    <!-- EXÁMENES DETALLE -->
+    <!-- EXÁMENES -->
     <div id="paginaExamenes" class="pagina-interna">
       <div class="barra-interna azul">
         <div class="container">
@@ -918,11 +1098,9 @@
           <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
         </div>
       </div>
-      <div class="solucionarios-titulo">
-        <h1>Exámenes ESFM</h1>
-        <p>Selecciona el año del examen</p>
-      </div>
+      <div class="solucionarios-titulo"><h1>Exámenes ESFM</h1><p>Selecciona el año del examen</p></div>
       <div class="container pb-4">
+
         <!-- 2017 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -933,12 +1111,9 @@
                   <div class="icons"><i class="bi bi-fullscreen"></i></div>
                 </div>
                 <div class="cuerpo-video">
-                  <img class="portada-pdf" src="https://drive.google.com/thumbnail?id=1NQLpGyZCkOwEHTWgxyaHLyYrWb5v_Q1G&sz=w800" alt="Examen 2017" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                  <div style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#1565c0,#42a5f5); align-items:center; justify-content:center; color:white; font-size:3rem;">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </div>
+                  <img class="portada-pdf" src="2017.png" alt="Examen 2017" onerror="this.style.display='none'">
                   <div class="overlay-pdf"></div>
-                  <a href="https://drive.google.com/file/d/1NQLpGyZCkOwEHTWgxyaHLyYrWb5v_Q1G/view?usp=drive_link" class="play-btn" target="_blank" title="Abrir PDF">
+                  <a href="https://drive.google.com/file/d/1CRmYLdfAnrDUxo06lt66ruidFi6_VC3A/view?usp=drive_link" class="play-btn" target="_blank">
                     <i class="bi bi-file-earmark-pdf-fill"></i>
                   </a>
                 </div>
@@ -947,13 +1122,14 @@
             <div class="col-md-6">
               <div class="info-derecha">
                 <h3>EXAMEN ESFM 2017</h3>
-                <a href="https://drive.google.com/file/d/1NQLpGyZCkOwEHTWgxyaHLyYrWb5v_Q1G/view?usp=drive_link" class="btn-pdf" target="_blank">
+                <a href="https://drive.google.com/file/d/1CRmYLdfAnrDUxo06lt66ruidFi6_VC3A/view?usp=drive_link" class="btn-pdf" target="_blank">
                   Ver / Descargar PDF
                 </a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- 2018 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -964,12 +1140,9 @@
                   <div class="icons"><i class="bi bi-fullscreen"></i></div>
                 </div>
                 <div class="cuerpo-video">
-                  <img class="portada-pdf" src="https://drive.google.com/thumbnail?id=1O2_3hWDeufBQNS8CTR_30bsmApbCzYyW&sz=w800" alt="Examen 2018" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                  <div style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#1565c0,#42a5f5); align-items:center; justify-content:center; color:white; font-size:3rem;">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </div>
+                  <img class="portada-pdf" src="2018.png" alt="Examen 2018" onerror="this.style.display='none'">
                   <div class="overlay-pdf"></div>
-                  <a href="https://drive.google.com/file/d/1O2_3hWDeufBQNS8CTR_30bsmApbCzYyW/view?usp=drive_link" class="play-btn" target="_blank">
+                  <a href="https://drive.google.com/file/d/1ePtTx_anntGkX0Ab6HdBKtoN8nDHlxYx/view?usp=drive_link" class="play-btn" target="_blank">
                     <i class="bi bi-file-earmark-pdf-fill"></i>
                   </a>
                 </div>
@@ -978,13 +1151,14 @@
             <div class="col-md-6">
               <div class="info-derecha">
                 <h3>EXAMEN ESFM 2018</h3>
-                <a href="https://drive.google.com/file/d/1O2_3hWDeufBQNS8CTR_30bsmApbCzYyW/view?usp=drive_link" class="btn-pdf" target="_blank">
+                <a href="https://drive.google.com/file/d/1ePtTx_anntGkX0Ab6HdBKtoN8nDHlxYx/view?usp=drive_link" class="btn-pdf" target="_blank">
                   Ver / Descargar PDF
                 </a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- 2019 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -995,12 +1169,9 @@
                   <div class="icons"><i class="bi bi-fullscreen"></i></div>
                 </div>
                 <div class="cuerpo-video">
-                  <img class="portada-pdf" src="https://drive.google.com/thumbnail?id=1ZAV-8mY1uH9bTjmz70pb75b2q0zSLast&sz=w800" alt="Examen 2019" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                  <div style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#1565c0,#42a5f5); align-items:center; justify-content:center; color:white; font-size:3rem;">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </div>
+                  <img class="portada-pdf" src="2019.png" alt="Examen 2019" onerror="this.style.display='none'">
                   <div class="overlay-pdf"></div>
-                  <a href="https://drive.google.com/file/d/1ZAV-8mY1uH9bTjmz70pb75b2q0zSLast/view?usp=drive_link" class="play-btn" target="_blank">
+                  <a href="https://drive.google.com/file/d/1vyBGwS4HNxWDSL_DjMuyg30zfUlUa8Zw/view?usp=drive_link" class="play-btn" target="_blank">
                     <i class="bi bi-file-earmark-pdf-fill"></i>
                   </a>
                 </div>
@@ -1009,13 +1180,14 @@
             <div class="col-md-6">
               <div class="info-derecha">
                 <h3>EXAMEN ESFM 2019</h3>
-                <a href="https://drive.google.com/file/d/1ZAV-8mY1uH9bTjmz70pb75b2q0zSLast/view?usp=drive_link" class="btn-pdf" target="_blank">
+                <a href="https://drive.google.com/file/d/1vyBGwS4HNxWDSL_DjMuyg30zfUlUa8Zw/view?usp=drive_link" class="btn-pdf" target="_blank">
                   Ver / Descargar PDF
                 </a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- 2020 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -1026,12 +1198,9 @@
                   <div class="icons"><i class="bi bi-fullscreen"></i></div>
                 </div>
                 <div class="cuerpo-video">
-                  <img class="portada-pdf" src="https://drive.google.com/thumbnail?id=1RFn4_M80WaHQE2xtLBOqbBOYQo6koEOK&sz=w800" alt="Examen 2020" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                  <div style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#1565c0,#42a5f5); align-items:center; justify-content:center; color:white; font-size:3rem;">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </div>
+                  <img class="portada-pdf" src="2020.png" alt="Examen 2020" onerror="this.style.display='none'">
                   <div class="overlay-pdf"></div>
-                  <a href="https://drive.google.com/file/d/1RFn4_M80WaHQE2xtLBOqbBOYQo6koEOK/view?usp=drive_link" class="play-btn" target="_blank">
+                  <a href="https://drive.google.com/file/d/15J7RfTdfW2V1IX5Opnk1wMhLOXTITGgl/view?usp=drive_link" class="play-btn" target="_blank">
                     <i class="bi bi-file-earmark-pdf-fill"></i>
                   </a>
                 </div>
@@ -1040,13 +1209,14 @@
             <div class="col-md-6">
               <div class="info-derecha">
                 <h3>EXAMEN ESFM 2020</h3>
-                <a href="https://drive.google.com/file/d/1RFn4_M80WaHQE2xtLBOqbBOYQo6koEOK/view?usp=drive_link" class="btn-pdf" target="_blank">
+                <a href="https://drive.google.com/file/d/15J7RfTdfW2V1IX5Opnk1wMhLOXTITGgl/view?usp=drive_link" class="btn-pdf" target="_blank">
                   Ver / Descargar PDF
                 </a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- 2021 -->
         <div class="fila-solucionario">
           <div class="row align-items-center g-3">
@@ -1057,12 +1227,9 @@
                   <div class="icons"><i class="bi bi-fullscreen"></i></div>
                 </div>
                 <div class="cuerpo-video">
-                  <img class="portada-pdf" src="https://drive.google.com/thumbnail?id=1xWyIlvJlPz2pFygaC2Dsp0YR3hnIOen4&sz=w800" alt="Examen 2021" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                  <div style="display:none; width:100%; height:100%; background:linear-gradient(135deg,#1565c0,#42a5f5); align-items:center; justify-content:center; color:white; font-size:3rem;">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                  </div>
+                  <img class="portada-pdf" src="2021.png" alt="Examen 2021" onerror="this.style.display='none'">
                   <div class="overlay-pdf"></div>
-                  <a href="https://drive.google.com/file/d/1xWyIlvJlPz2pFygaC2Dsp0YR3hnIOen4/view?usp=drive_link" class="play-btn" target="_blank">
+                  <a href="https://drive.google.com/file/d/1fLHdm68AhCJ4NQXWYNzOu-mbcs6QAvrY/view?usp=drive_link" class="play-btn" target="_blank">
                     <i class="bi bi-file-earmark-pdf-fill"></i>
                   </a>
                 </div>
@@ -1071,41 +1238,60 @@
             <div class="col-md-6">
               <div class="info-derecha">
                 <h3>EXAMEN ESFM 2021</h3>
-                <a href="https://drive.google.com/file/d/1xWyIlvJlPz2pFygaC2Dsp0YR3hnIOen4/view?usp=drive_link" class="btn-pdf" target="_blank">
+                <a href="https://drive.google.com/file/d/1fLHdm68AhCJ4NQXWYNzOu-mbcs6QAvrY/view?usp=drive_link" class="btn-pdf" target="_blank">
                   Ver / Descargar PDF
                 </a>
               </div>
             </div>
           </div>
         </div>
+
       </div>
       <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
     </div>
 
-    <!-- WHATSAPP -->
-    <a href="https://wa.me/59175828534" class="whatsapp-float" target="_blank" id="btnWhatsapp">
-      <i class="bi bi-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/59175828534" class="whatsapp-float" target="_blank" id="btnWhatsapp"><i class="bi bi-whatsapp"></i></a>
 
-    <!-- FOOTER -->
     <footer class="text-center">
       <div class="container">
         <h5 class="fw-bold mb-2">DYNAMICS</h5>
         <p class="mb-1 opacity-75">Clases de Razonamiento Matemático</p>
-        <p class="small opacity-50 mb-0">© 2025 - Todos los derechos reservados</p>
+        <p class="small opacity-50 mb-0">© 2026 - Todos los derechos reservados</p>
       </div>
     </footer>
   </div>
-  <!-- FIN APP CONTENT -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // ========== CREDENCIALES (cámbialas aquí) ==========
-    const USUARIO_CORRECTO = "dynamics";
-    const CLAVE_CORRECTA   = "esfm2025";
-    // ===================================================
+    // ========== USUARIOS ==========
+    const USUARIOS = {
+      "dynamics": "esfm2026",
+      "acamata": "68703018",
+      "jflores": "77449195",
+      "mveliz": "72443684",
+      "echurqui": "71235200",
+      "aaguilar": "65327489",
+      "mchoque": "73285512",
+      "yyana": "62304799",
+      "bignacio": "71423118",
+      "rchoqueo": "67345895",
+      "vtola": "71712469",
+      "apajarito": "74075392",
+      "rhuallpa": "73804842",
+      "jalanoca": "75865883",
+      "nrivera": "73438787",
+      "narias": "79365078",
+      "rchoque": "72560365",
+      "rcampos": "64266076",
+      "dmorales": "72860623",
+      "dchoque": "77241513",
+      "mpaco": "67048380",
+      "kplatero": "62544262",
+      "rmamani": "78910766",
+      "ctarqui": "9956289"
+    };
+    // ==============================
 
-    // Comprobar si ya está logueado
     if (localStorage.getItem("dynamics_logueado") === "si") {
       document.getElementById("loginScreen").classList.add("oculto");
       document.getElementById("appContent").classList.remove("oculto");
@@ -1115,7 +1301,7 @@
       e.preventDefault();
       const user = document.getElementById("usuario").value.trim();
       const pass = document.getElementById("clave").value;
-      if (user === USUARIO_CORRECTO && pass === CLAVE_CORRECTA) {
+      if (USUARIOS[user] && USUARIOS[user] === pass) {
         localStorage.setItem("dynamics_logueado", "si");
         document.getElementById("loginScreen").classList.add("oculto");
         document.getElementById("appContent").classList.remove("oculto");
@@ -1131,7 +1317,6 @@
       location.reload();
     }
 
-    // Hero fallback
     const hero = document.getElementById("heroBanner");
     if (hero) {
       const img = new Image();
@@ -1141,14 +1326,14 @@
 
     function ocultarTodas() {
       document.getElementById("contenidoPrincipal").classList.add("oculto");
-      ["paginaClases","paginaComprensionCristian","paginaComprensionSergio","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
+      ["paginaClases","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
         document.getElementById(id).classList.remove("activa");
       });
       document.getElementById("btnWhatsapp").style.display = "none";
     }
 
     function cerrarTodas() {
-      ["paginaClases","paginaComprensionCristian","paginaComprensionSergio","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
+      ["paginaClases","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
         document.getElementById(id).classList.remove("activa");
       });
       document.getElementById("contenidoPrincipal").classList.remove("oculto");
@@ -1168,49 +1353,30 @@
       window.scrollTo(0,0);
       history.pushState({p:"clases"}, "", "#clases");
     }
-
-    function abrirPaginaComprensionCristian() {
-      ocultarTodas();
-      document.getElementById("paginaComprensionCristian").classList.add("activa");
-      window.scrollTo(0,0);
-      history.pushState({p:"comprension-cristian"}, "", "#comprension-cristian");
-    }
-
-    function abrirPaginaComprensionSergio() {
-      ocultarTodas();
-      document.getElementById("paginaComprensionSergio").classList.add("activa");
-      window.scrollTo(0,0);
-      history.pushState({p:"comprension-sergio"}, "", "#comprension-sergio");
-    }
-
     function abrirPaginaSolucionariosMenu() {
       ocultarTodas();
       document.getElementById("paginaSolucionariosMenu").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"solucionarios"}, "", "#solucionarios");
     }
-
     function abrirPaginaBanco() {
       ocultarTodas();
       document.getElementById("paginaBanco").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"banco"}, "", "#banco");
     }
-
     function abrirPaginaConocimientos() {
       ocultarTodas();
       document.getElementById("paginaConocimientos").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"conocimientos"}, "", "#conocimientos");
     }
-
     function abrirPaginaBiblioteca() {
       ocultarTodas();
       document.getElementById("paginaBiblioteca").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"biblioteca"}, "", "#biblioteca");
     }
-
     function abrirPaginaExamenes() {
       ocultarTodas();
       document.getElementById("paginaExamenes").classList.add("activa");
