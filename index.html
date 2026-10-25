@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -188,6 +188,12 @@
     .tarjeta-item .img-placeholder.verde {
       background: linear-gradient(135deg, #1b5e20, #2e7d32, #43a047);
     }
+    .tarjeta-item .img-placeholder.naranja {
+      background: linear-gradient(135deg, #e65100, #f57c00, #ff9800);
+    }
+    .tarjeta-item .img-placeholder.rosa {
+      background: linear-gradient(135deg, #ad1457, #c2185b, #e91e63);
+    }
     .tarjeta-item .img-placeholder.biblioteca {
       background: linear-gradient(135deg, #1565c0, #1976d2, #42a5f5);
     }
@@ -273,7 +279,8 @@
     }
     .menu-titulo p { color: #666; }
 
-    #paginaClases, #paginaBanco, #paginaConocimientos, #paginaExamenes {
+    #paginaClases, #paginaComprensionCristian, #paginaComprensionSergio,
+    #paginaBanco, #paginaConocimientos, #paginaExamenes {
       background: #1a5f7a;
     }
     .solucionarios-titulo {
@@ -462,43 +469,28 @@
       padding: 40px 0;
     }
 
-    /* Separador de secciones dentro de clases */
-    .separador-seccion {
-      margin: 50px 0 30px;
-      text-align: center;
-      color: white;
-    }
-    .separador-seccion h2 {
-      font-weight: 800;
-      font-size: 1.8rem;
-      margin-bottom: 6px;
-    }
-    .separador-seccion p {
-      opacity: 0.85;
-      font-size: 1.1rem;
-      margin: 0;
-    }
     .mensaje-vacio-interno {
       background: rgba(255,255,255,0.12);
       border-radius: 16px;
-      padding: 40px 25px;
+      padding: 50px 25px;
       text-align: center;
       color: white;
-      max-width: 600px;
-      margin: 0 auto 40px;
+      max-width: 620px;
+      margin: 40px auto;
     }
     .mensaje-vacio-interno i {
-      font-size: 3.5rem;
-      margin-bottom: 15px;
+      font-size: 4rem;
+      margin-bottom: 18px;
       opacity: 0.9;
     }
     .mensaje-vacio-interno h3 {
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .mensaje-vacio-interno p {
       opacity: 0.85;
       margin: 0;
+      font-size: 1.05rem;
     }
 
     @media (max-width: 767px) {
@@ -541,6 +533,7 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <div id="contenidoPrincipal">
+
       <!-- VIDEOS OCTUBRE -->
       <div class="seccion-banner">
         <div class="container"><h2>Videos de Grabaciones de Clase OCTUBRE</h2></div>
@@ -555,6 +548,37 @@
                   <span>Razonamiento<br>Matemático</span>
                 </div>
                 <div class="titulo-card"><h4>Razonamiento<br>Matemático</h4></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPRENSIÓN LECTORA -->
+      <div class="seccion-banner">
+        <div class="container"><h2>COMPRENSIÓN LECTORA</h2></div>
+      </div>
+      <div class="seccion-contenido">
+        <div class="container">
+          <div class="row justify-content-center g-4">
+            <!-- Lic. Cristian Alarcon -->
+            <div class="col-md-5 col-lg-4">
+              <div class="tarjeta-item" onclick="abrirPaginaComprensionCristian()" role="button" tabindex="0">
+                <div class="img-placeholder rosa">
+                  <i class="bi bi-book"></i>
+                  <span>Comprensión<br>Lectora</span>
+                </div>
+                <div class="titulo-card"><h4>Lic. Cristian Alarcon</h4></div>
+              </div>
+            </div>
+            <!-- Lic. Sergio Rodrigues -->
+            <div class="col-md-5 col-lg-4">
+              <div class="tarjeta-item" onclick="abrirPaginaComprensionSergio()" role="button" tabindex="0">
+                <div class="img-placeholder naranja">
+                  <i class="bi bi-journal-text"></i>
+                  <span>Comprensión<br>Lectora</span>
+                </div>
+                <div class="titulo-card"><h4>Lic. Sergio Rodrigues</h4></div>
               </div>
             </div>
           </div>
@@ -585,7 +609,7 @@
       </div>
     </div>
 
-    <!-- ========== PÁGINA CLASES (RAZONAMIENTO + COMPRENSIÓN LECTORA) ========== -->
+    <!-- ========== PÁGINA CLASES RAZONAMIENTO MATEMÁTICO ========== -->
     <div id="paginaClases" class="pagina-interna">
       <div class="barra-interna azul">
         <div class="container">
@@ -594,8 +618,6 @@
           <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
         </div>
       </div>
-
-      <!-- ========== RAZONAMIENTO MATEMÁTICO ========== -->
       <div class="solucionarios-titulo">
         <h1>Razonamiento Matemático</h1>
         <p>Clases grabadas - Octubre</p>
@@ -941,13 +963,23 @@
         </div>
 
       </div>
+      <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
+    </div>
 
-      <!-- ========== COMPRENSIÓN LECTORA - LIC. CRISTIAN ALARCON ========== -->
-      <div class="separador-seccion">
-        <h2><i class="bi bi-book me-2"></i>Comprensión Lectora</h2>
+    <!-- ========== PÁGINA COMPRENSIÓN LECTORA - CRISTIAN ALARCON ========== -->
+    <div id="paginaComprensionCristian" class="pagina-interna">
+      <div class="barra-interna azul">
+        <div class="container">
+          <a href="#" class="btn-volver" onclick="cerrarTodas();return false;"><i class="bi bi-arrow-left"></i> Atrás</a>
+          <div class="fw-bold d-none d-md-block"><i class="bi bi-book me-2"></i> COMPRENSIÓN LECTORA</div>
+          <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
+        </div>
+      </div>
+      <div class="solucionarios-titulo">
+        <h1>Comprensión Lectora</h1>
         <p>Lic. Cristian Alarcon</p>
       </div>
-      <div class="container pb-4">
+      <div class="container pb-5">
         <div class="mensaje-vacio-interno">
           <i class="bi bi-camera-video-off"></i>
           <h3>Por el momento no se tienen clases grabadas</h3>
@@ -955,10 +987,20 @@
           Pronto encontrarás aquí los videos y documentos de clase.</p>
         </div>
       </div>
+      <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
+    </div>
 
-      <!-- ========== COMPRENSIÓN LECTORA - LIC. SERGIO RODRIGUES ========== -->
-      <div class="separador-seccion">
-        <h2><i class="bi bi-journal-text me-2"></i>Comprensión Lectora</h2>
+    <!-- ========== PÁGINA COMPRENSIÓN LECTORA - SERGIO RODRIGUES ========== -->
+    <div id="paginaComprensionSergio" class="pagina-interna">
+      <div class="barra-interna azul">
+        <div class="container">
+          <a href="#" class="btn-volver" onclick="cerrarTodas();return false;"><i class="bi bi-arrow-left"></i> Atrás</a>
+          <div class="fw-bold d-none d-md-block"><i class="bi bi-journal-text me-2"></i> COMPRENSIÓN LECTORA</div>
+          <a href="#" class="btn-volver" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i> Inicio</a>
+        </div>
+      </div>
+      <div class="solucionarios-titulo">
+        <h1>Comprensión Lectora</h1>
         <p>Lic. Sergio Rodrigues</p>
       </div>
       <div class="container pb-5">
@@ -969,7 +1011,6 @@
           Pronto encontrarás aquí los videos y documentos de clase.</p>
         </div>
       </div>
-
       <a href="#" class="btn-inicio" onclick="volverAlInicio();return false;"><i class="bi bi-house-fill"></i></a>
     </div>
 
@@ -1277,14 +1318,14 @@
 
     function ocultarTodas() {
       document.getElementById("contenidoPrincipal").classList.add("oculto");
-      ["paginaClases","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
+      ["paginaClases","paginaComprensionCristian","paginaComprensionSergio","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
         document.getElementById(id).classList.remove("activa");
       });
       document.getElementById("btnWhatsapp").style.display = "none";
     }
 
     function cerrarTodas() {
-      ["paginaClases","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
+      ["paginaClases","paginaComprensionCristian","paginaComprensionSergio","paginaSolucionariosMenu","paginaBanco","paginaConocimientos","paginaBiblioteca","paginaExamenes"].forEach(id => {
         document.getElementById(id).classList.remove("activa");
       });
       document.getElementById("contenidoPrincipal").classList.remove("oculto");
@@ -1303,6 +1344,18 @@
       document.getElementById("paginaClases").classList.add("activa");
       window.scrollTo(0,0);
       history.pushState({p:"clases"}, "", "#clases");
+    }
+    function abrirPaginaComprensionCristian() {
+      ocultarTodas();
+      document.getElementById("paginaComprensionCristian").classList.add("activa");
+      window.scrollTo(0,0);
+      history.pushState({p:"comprension-cristian"}, "", "#comprension-cristian");
+    }
+    function abrirPaginaComprensionSergio() {
+      ocultarTodas();
+      document.getElementById("paginaComprensionSergio").classList.add("activa");
+      window.scrollTo(0,0);
+      history.pushState({p:"comprension-sergio"}, "", "#comprension-sergio");
     }
     function abrirPaginaSolucionariosMenu() {
       ocultarTodas();
